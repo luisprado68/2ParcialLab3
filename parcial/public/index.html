@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts/all.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel=”Shortcut Icon” href=”favicon.ico” type=img/x-icon” />
+    <title>Pisteando</title>
+    <script src="./js/accion.js" defer type="module"></script>
+    
+    
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-dark bg-primary">
+            
+            <ul>
+                <a href="./index.html"><img src="./img/autoicono.svg" alt="imagen del logo"></a>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./anuncios.html">Anuncios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+
+        <h1>Administración</h1>
+    </header>
+
+    <div class="img">
+        <img src="./img/fondo.jpg" alt="">
+    </div>
+
+    <section class="container" id="dataIn">
+        <div class="row">
+            <form >
+                    <div class="col col-lg-12">
+                    
+                        Titulo:<input type="text " id="txtTitulo" required>
+
+                        Transaccion
+                            <select name="transaccion" id="txtTransaccion" class="form-control">
+                                <option value="Venta">Venta</option> 
+                                <option value="Alquiler" selected>Alquiler</option>
+                                <option value="Permuta" >Permuta</option>
+                              </select>
+                        
+                        Descripcion:<input type="text " id="txtDescripcion" required>
+                        Precio:<input type="text " id="txtPrecio" required>
+                        
+                    </div>
+                    <div class="col icono">
+                        
+                            <i class="fas fa-car"></i><input type="text " id="txtPuertas"  placeholder="Puertas" required>
+                            <i class="fas fa-map-marked-alt"></i><input type="text " id="txtKMs"  placeholder="KMs" required>
+                            <i class="fas fa-bolt"></i><input type="text " id="txtPotencia"  placeholder="Potencia" required>
+                    </div>
+                    
+        
+              
+                    <div class="botones">
+                        <button id="alta">Guardar</button>
+                        <button id="btnModificar">Modificar</button>
+                        <button id="btnEliminar">Eliminar</button>
+                        <button id="btnCancelar">Cancelar</button>
+                    </div>
+            </form>
+        </div>
+       
+    </section>
+    
+    <section>
+        <div class="container">
+
+            <div class="row bg-primary filtro">
+                
+                    <h1 class="col-12">Filtros</h1>
+                    <div class="col-4">
+                        
+                        Transaccion
+                        <select name="transaccion2" id="txtTransaccion2" class="form-control">
+                            <option value="Todos">Todos</option> 
+                            <option value="Venta">Venta</option> 
+                            <option value="Alquiler" selected>Alquiler</option>
+                        </select>
+                        
+                        
+                    </div>
+                    <div class="col-4">
+                        Promedio de precios:<input type="text " id="promedio" required>
+                    </div>
+                    
+                
+                
+                        
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row green">
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="id" value="option1">
+                        <label class="form-check-label" for="id">ID</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="titulo" value="option1">
+                        <label class="form-check-label" for="titulo">TITULO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="transaccion" value="option1">
+                        <label class="form-check-label" for="transaccion">TRANSACCION</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="descripcion" value="option1">
+                        <label class="form-check-label" for="descripcion">DESCRIPCION</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="precio" value="option1">
+                        <label class="form-check-label" for="precio">PRECIO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="puertas" value="option1">
+                        <label class="form-check-label" for="puertas">PUERTAS</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="kms" value="option1">
+                        <label class="form-check-label" for="kms">KMS</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="potencia" value="option1">
+                        <label class="form-check-label" for="potencia">POTENCIA</label>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="center" id="cont">
+            <table id="tablita"class="table table-hover center">
+                <thead class="bg-primary">
+                  <tr>
+                    <th>id</th>
+                    <th>titulo</th>
+                    <th>transaccion</th>
+                    <th>descripcion</th>
+                    <th>precio</th>
+                    <th>puertas</th>
+                    <th>kms</th>
+                    <th>potencia</th>
+                  </tr>
+                </thead>
+              
+                <tbody id="tbody" class ="table-striped" >
+                </tbody>
+              
+              </table>
+        
+        </div>
+            
+    </section>
+    <footer class=" bg-primary">
+        <nav class="navbar navbar-dark bg-primary">
+            <ul>
+                
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./anuncios.html">Anuncios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <a href="https://github.com/luisprado68/LuisPrado.PPLABIII3D" target="_blank" class="link">Luis Prado &copy;</a><i class="fab fa-github-square"></i>
+                
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

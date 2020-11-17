@@ -1,0 +1,171 @@
+img{
+    width: 25%;
+     display: flex;
+    align-items: flex-start; 
+}
+nav{
+    background-color: #4980CF;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    flex-direction:  row ;
+    
+    
+}
+ li{
+    
+    list-style-type: none;
+    background-color: black;
+    display: inline;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    background-color: #284C7F;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img img {
+    width: 100%;
+    height: 500px;
+   
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+   
+    background-color:  rgb(16, 73, 148);;
+    border: 1px solid black;
+    border-radius: 5px ;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    
+}
+
+#txtTitulo,#txtDescripcion,#txtPrecio{
+    width: 100%;
+}
+#txtTransaccion{
+    display: block;
+}
+
+#txtTransaccion2{
+    display: block;
+}
+.icono{
+    margin-top: 30px;
+}
+
+
+input{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px ;
+}
+.botones button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px ;
+    margin-top: 20px;
+}
+
+.botones button:hover{
+    background-color: #284C7F;
+    
+}
+
+.filtro{
+    background-color: red;
+    width: 882px;
+    border: 1px solid black;
+    border-radius: 5px ;
+    font-size: 20px;
+    
+}
+.filtro input{
+    margin-bottom: 20px;
+}
+
+.green{
+    background-color: black;
+    width: 882px;
+    border: 1px solid black;
+    border-radius: 5px ;
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+
+fieldset{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 700px;
+    border-collapse: collapse;
+    margin: 50px;
+    
+    
+}
+table thead {
+    color: #fff;
+    background-color: rgb(10, 44, 88);
+  }
+table,th,td{
+    border: 1px solid #000;
+    padding: 5px;
+} 
+#btnModificar,#btnEliminar,#btnCancelar{
+   display:none;
+}
+
+  footer {
+      background-color:  #4980CF;
+      padding: 10px;
+  }
+  
+footer ul a.link{
+    padding-left: 700px;
+    color: white;
+}
+/*gif------------*/
+.gif{
+    width: 70%;
+    
+  }
+
+.link a{
+    color: black;
+}
+.fas{
+    margin-right: 20px;
+}
+
